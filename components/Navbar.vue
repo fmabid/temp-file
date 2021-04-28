@@ -84,6 +84,7 @@ ul li:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   transform: translate(-25%, 0);
+  border-radius: 2px;
 }
 
 .service .dropdown-content {
@@ -93,13 +94,17 @@ ul li:hover {
 .dropdown-content a {
   color: black;
   padding: 4px 8px;
+  margin: 2px 0;
   text-decoration: none;
   display: block;
-  border-radius: 2px;
+  border-radius: 4px;
+  background: transparent;
+  transition: all .3s ease;
 }
 
 .dropdown-content a:hover {
-  background-image: linear-gradient(100deg, #fa7070, #fa9770);
+  /* background: linear-gradient(100deg, #fa7070, #fa9770); */
+  background: #fa9770;
   color: #fff;
 }
 

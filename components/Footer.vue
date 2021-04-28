@@ -31,8 +31,11 @@
 
           <p>58/27, Ghoramara, Boalia, Rajshahi-6100, Dhaka, Bangladesh.</p>
 
-          <ul>
-            <li class="link"></li>
+          <ul class="flex flex-row items-center space-x-4">
+            <li class="link">FB</li>
+            <li class="link">TW</li>
+            <li class="link">IN</li>
+            <li class="link">YT</li>
           </ul>
         </div>
       </div>
@@ -52,15 +55,35 @@ footer {
 ul li,
 p {
   color: #797687;
+  font-weight: 600;
 }
 
 ul li:hover {
   color: #fa7070;
   cursor: pointer;
+  transition: all .2s;
 }
 
 .link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-weight: 500;
+  font-size: .9rem;
   background-image: linear-gradient(15deg, #fa9770, #fa7070) !important;
   color: #fff !important;
+  border-radius: 50%;
+  transition: all .5s;
+  border: 1px solid #fa9770;
+  @apply shadow-md;
+}
+
+.link:hover{
+  border: 1px solid #fa7070;
+  transition: all .5s;
+  @apply shadow-xl
 }
 </style>

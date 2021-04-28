@@ -50,7 +50,7 @@
             </h2>
 
             <ul class="space-y-4">
-              <li class="space-x-4">
+              <li class="space-x-4 flex flex-row items-start">
                 <img
                   src="https://devxhub.com/frontend/assets/img/check-mark.svg"
                   alt=""
@@ -60,7 +60,7 @@
                   Support.</span
                 >
               </li>
-              <li class="space-x-4">
+              <li class="space-x-4 flex flex-row items-start">
                 <img
                   src="https://devxhub.com/frontend/assets/img/check-mark.svg"
                   alt=""
@@ -71,7 +71,7 @@
                   of the company.</span
                 >
               </li>
-              <li class="space-x-4">
+              <li class="space-x-4 flex flex-row items-start">
                 <img
                   src="https://devxhub.com/frontend/assets/img/check-mark.svg"
                   alt=""
@@ -81,7 +81,7 @@
                   technology in harmony with requirements of future.</span
                 >
               </li>
-              <li class="space-x-4">
+              <li class="space-x-4 flex flex-row items-start">
                 <img
                   src="https://devxhub.com/frontend/assets/img/check-mark.svg"
                   alt=""
@@ -91,7 +91,7 @@
                   Sector.</span
                 >
               </li>
-              <li class="space-x-4">
+              <li class="space-x-4 flex flex-row items-start">
                 <img
                   src="https://devxhub.com/frontend/assets/img/check-mark.svg"
                   alt=""
@@ -101,7 +101,7 @@
                   in quality and reliability for products and services.</span
                 >
               </li>
-              <li class="space-x-4">
+              <li class="space-x-4 flex flex-row items-start">
                 <img
                   src="https://devxhub.com/frontend/assets/img/check-mark.svg"
                   alt=""
@@ -117,7 +117,7 @@
             </h2>
 
             <ul class="space-y-4">
-              <li class="space-x-4">
+              <li class="space-x-4 flex flex-row items-start">
                 <img
                   src="https://devxhub.com/frontend/assets/img/check-mark.svg"
                   alt=""
@@ -129,7 +129,7 @@
                   Time.</span
                 >
               </li>
-              <li class="space-x-4">
+              <li class="space-x-4 flex flex-row items-start">
                 <img
                   src="https://devxhub.com/frontend/assets/img/check-mark.svg"
                   alt=""
@@ -411,12 +411,23 @@ export default {
   transition: 0.2s ease;
 }
 
+.sec-5 .card{
+  background: linear-gradient(to left, transparent 50%, salmon 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+}
+
+.sec-5 .card:hover {
+  background-position: left;
+  color: white;
+}
+
 .sec-5 .card img {
   transition: 0.2s ease-in-out;
 }
 
 .sec-5 .card img:hover {
-  transform: rotate(20deg);
+  transform: scale(1.2);
   transition: 0.2s ease-in-out;
 }
 
